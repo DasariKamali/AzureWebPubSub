@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PublishComponent } from './components/publish/publish.component';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [PublishComponent, SubscribeComponent]
 })
 export class AppComponent {
-  title = 'your-angular-project';
+  title = 'angular-web-pubsub';
 }
